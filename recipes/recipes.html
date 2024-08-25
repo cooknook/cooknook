@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- icon -->
+  <link rel = "shortcut icon" type = "x-icon" href = "images/cook.png">
+  <link rel="stylesheet" href="/recipes/recipes.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.cdnfonts.com/css/aileron" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/dm-sans" rel="stylesheet">
+  <title>cooknook.co</title>
+</head>
+<body>
+  <div class="container">
+      <!-- navbar -->
+      <div class="container">
+        <img src = "/images/cook.png" id = "logo"></src>
+        <div class="navbar">
+          <ul>
+            <!-- empty is bx, full is bxs -->
+            <!-- homepage icon -->
+            <li>
+              <a onclick = "goHomepage()">
+                <i class='bx bx-home icon'></i>
+                <i class='bx bxs activeIcon'></i>
+              </a>
+            </li>
+            <!-- recipes icon -->
+            <li class="active">
+              <a onclick = "goRecipes()">
+                <i class='bx bx-bowl-hot icon'></i>
+                <i class='bx bxs activeIcon'></i>
+              </a>
+            </li>
+            <!-- profile icon -->
+            <li>
+              <a onclick = "goProfile()">
+                <i class='bx bx-user-circle icon'></i>
+                <i class='bx bxs activeIcon'></i>
+              </a>
+            </li>
+            <div class="indicator"></div>
+          </ul>
+        </div>
+      </div>
+  
+    <!-- search + results -->
+  <center>
+      <div class="secondsection"> </div> 
+      <h1 id = "title">RECIPES</h1>
+      <br>
+      <form>
+        <input type="text" id="search" placeholder="enter ingredients">
+        <button id="button" class="btn">search</button>
+      </form>
+  </center>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div id="results"></div>
+    
+    <footer>
+      <p id = "copyright">cooknook.co[2024-apsj]</p>
+    </footer>
+  </div>
+  
+  <script src="/recipes/navbarrecipes.js"></script>
+  <script src="/recipes/recipes.js"></script>
+  <script src="/recipes/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+/*CUSTOM FONTS*/
+@import url('https://fonts.cdnfonts.com/css/aileron'); /*aileron*/
+@font-face {
+  font-family: 'LazyDog';
+  src: url('/fonts/lazy_dog.ttf');
+}
+/*lazydog*/
+
+body {
+  margin: 0;
+  font-family: 'IM Fell DW Pica', sans-serif;
+  background-color: #f9f1e9;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.secondsection {
+  position: absolute;
+  background-image: url('/images/bg2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 6px solid #b59389;
+  opacity: 60%;
+  top: 5%;
+  left: 24.5%;
+  width: 50%;
+  height: 30%;
+  color: #a3786c;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+#logo {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 60px;
+  height: 100px;
+}
+
+#title {
+  position: absolute;
+  font-size: 120px;
+  left: 50%;
+  top: -5%;
+  transform: translateX(-50%);
+  color: #b59389;
+  box-shadow: #fff;
+  font-family: "DM sans", sans-serif;
+  font-style: italic;
+  text-shadow: 6px 6px #fff;
+  z-index: 2;
+}
+
+form {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 17%;
+  justify-content: left;
+  margin: 40px 0;
+  z-index: 2;
+}
+
+input[type="text"] {
+  background-color: #fff;
+  color: #b59389;
+  border: 2px solid #cfb5a1;
+  border-radius: 8px;
+  font-family: 'Aileron', sans-serif;
+  font-size: 24px;
+  padding: 12px;
+  width: 300px;
+}
+
+input[type="text"]:focus {
+  border-color: #b59389; /* set to brown color */
+  outline: none; /* remove the default blue outline */
+}
+
+.btn {
+  cursor: pointer;
+}
+
+submit:hover {
+  background-color: #cfb5a1;
+}
+
+#results {
+  top: 30%;
+  width : 100%;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  margin: 40px 0;
+}
+
+#results > div {
+  background-color: #fff;
+  border-radius: 8px;
+  border: 6px solid #b59389;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#results img {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+#results h3 {
+  color: #a3786c;
+  font-family: 'Aileron', sans-serif;
+  font-size: 24px;
+  margin: 0;
+}
+
+#results ul {
+  margin: 0 10 0 10;
+  padding: 0;
+}
+
+#results li {
+  list-style: inside;
+  margin-bottom: 10px;
+}
+
+#results a {
+  background-color: #b59389;
+  border-radius: 8px;
+  color: #fff;
+  font-family: 'Aileron', sans-serif;
+  font-size: 16px;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+#results a:hover {
+  background-color: #cfb5a1;
+}
+
+/* star function */
+.star-icon {
+  font-size: 24px;
+  color: #cfb5a1; 
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: #fff;
+  color: #b59389;
+  font-family: aileron;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 8px;
+  border-radius: 4px;
+  position: absolute;
+  left: 30px;
+  bottom: 50%;
+  transform: translateY(50%);
+  white-space: nowrap;
+  z-index: 1;
+  font-size: 14px;
+}
+
+.star-icon:hover .tooltip-text {
+  visibility: visible;
+}
+
+.starred {
+  color: #cfb5a1;
+}
+
+.star-icon:hover {
+  color: #cfb5a1; 
+}
+
+button {
+  background-color: #cfb5a1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-family: 'Aileron', sans-serif;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #a3786c;
+  color: white;
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+}
+
+#copyright {
+  position: relative;
+  top: 200%;
+  left: 0%;
+  text-align: center;
+  font-family: 'Aileron', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/*navbar*/
+.navbar{
+  position: absolute;
+  left: 82%;
+  top: 2%;
+  height: 80px;
+  width: 240px;
+  background: #a3786c;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.navbar ul{
+  position: relative;
+  display: flex;
+}
+
+.navbar ul li{
+  position: relative;
+  list-style-type: none;
+}
+
+.navbar ul li a{
+  position: relative;
+  height: 120px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-decoration: none;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+
+.navbar ul li a i{
+  position: absolute;
+  font-size: 38px;
+  color: #FFFFFF;
+}
+
+ul li a i.activeIcon{
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.6s ease;
+  transition-delay: 0.2s;
+}
+
+.navbar ul li.active a i{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.navbar ul .indicator {
+  position: absolute;
+  bottom: 0px;
+  left: 145px;
+  height: 10px;
+  width: 10px;
+  background: #fff;
+  border-radius: 100%;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+ul .indicator::before{
+  content: "";
+  position: absolute;
+  left: -15px;
+  bottom: 50%;
+  height: 22px;
+  width: 20px;
+  background: #fff;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 10px 0 #a3786c;
+}
+
+ul .indicator::after{
+  content: "";
+  position: absolute;
+  right: 50px;
+  bottom: 50%;
+  height: 22px;
+  width: 20px;
+  background: #a3786c;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0 10px 0 #a3786c;
+}
+
+/*hover for navbar change*/
+li.active-hover .bx,
+li.active-hover .bxs {
+    display: inline;
+}
+
+li.active-hover .bxs {
+  display: inline;
+}
+
+li.active .bx,
+li.active .bxs {
+    display: inline;
+}
+
+li.active .bxs {
+    display: inline;
+}
+/*end navbar*/
+
+.search_bar button
+{
+  padding: 5px 5px;
+}
+
