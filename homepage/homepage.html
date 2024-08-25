@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- icon -->
+  <link rel="shortcut icon" href="images/cook.png" type="image/png">
+  <link rel="stylesheet" href="/homepage/homepage.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <!-- icons can be found here: https://boxicons.com/?query=user -->
+  <link href="https://fonts.cdnfonts.com/css/aileron" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/dm-sans" rel="stylesheet">
+  <title>cooknook.co</title>
+</head>
+
+<body>
+  <!-- title -->
+  <div class="container">
+      <div class="mainsection"> </div> 
+      <h1 id = "title">cooknook</h1>
+    <!-- descrip. -->
+      <main>
+        <p id = "descrip">This is your cooknook! Get started by generating new and curated recipes, and then add them to your recipe collection. </p>
+      </main>
+  
+      <button id="button" onclick = "goRecipes()">start cooking</button>
+    <!-- descrip. -->
+    <!-- navbar -->
+      <div class="container">
+        <img src = "/images/cook.png" id = "logo"></src>
+        <div class="navbar">
+          <ul>
+            <!-- empty is bx, full is bxs -->
+            <!-- homepage icon -->
+            <li class="active">
+              <a onclick = "goHomepage()">
+                <i class='bx bx-home icon'></i>
+                <i class='bx bxs activeIcon'></i>
+              </a>
+            </li>
+            <!-- recipes icon -->
+            <li>
+              <a onclick = "goRecipes()">
+                <i class='bx bx-bowl-hot icon'></i>
+                <i class='bx bxs activeIcon'></i>
+              </a>
+            </li>
+            <!-- profile icon -->
+            <li>
+              <a onclick = "goProfile()">
+                <i class='bx bx-user-circle icon'></i>
+                <i class='bx bxs activeIcon'></i>
+              </a>
+            </li>
+            <div class="indicator"></div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <footer>
+    <p id = "copyright">cooknook.co[2024-apsj]</p>
+  </footer>
+  <script src="/homepage/navbarhomepage.js"></script>
+  <script src="/homepage/homepage.js"></script>
+</body>
+</html>
